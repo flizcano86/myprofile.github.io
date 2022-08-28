@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streaming</title>
+    <link rel="shortcut icon" href="images/LOGO 99.9.png" />
+    <link rel="stylesheet" href="./CSS/estreaming.css" />
+    <script
+      src="https://kit.fontawesome.com/7e5b2d153f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./JS/index.js"></script>
+  </head>
+  
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="logo nav-link">
+          <img src="./images/LOGO 99.9.png" alt="" class="logo">
+        </a>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="index.html" class="nav-menu-link nav-link">Inicio</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="streaming.html" class="nav-menu-link nav-link">Streaming</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="acerca.html" class="nav-menu-link nav-link">Acerca</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="contacto.html" class="nav-menu-link nav-link">Contacto</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="anunciate.html" class="nav-menu-link nav-link nav-menu-link_active"
+              >Anúnciate</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+
+<!--=====================
+          Content
+======================-->
+
+<section id="content"><div class="ic"></div>
+    <div class="container">
+      <div class="row">
+        <!-- <div class="grid_12">
+          <h2 class="subtitle1"><strong>¡UBÍCANOS!</strong></h2>
+        </div> -->
+
+        <div>
+          <section>
+            <img src="./images/STREAMING ES.jpg" class="portada">
+          </section>
+
+          <video class="video" controls >
+              <source src="./images/godzilla.mp4">
+            </video>
+        </div>
+    
+      </div>
+    </div>
+</section>   
+
+      <section class="container about">
+      <h2 class="subtitle">Caja de Comentarios</h2>
+      <p class="about__paragraph">Déjanos saber qué piensas acerca de nuestra programación.</p>
+      </section>
+  
+  
+
+<!-- Licencia: GRATIS-XDF4543ERF -->
+<div style = "bottom: 0;display: flex;height: 110px;left: 0;position: fixed;right: 0;width: 100%;z-index: 1500;overflow: hidden;" ><iframe name="contenedorPlayer" class="cuadroBordeado" allow="autoplay" width="100%" height="110px" marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no  src="https://cp.usastreams.com/pr2g/APPlayerRadioHTML5.aspx?stream=http://stream.zeno.fm/4075d68dbxhvv&fondo=05&formato=mpeg&color=17&titulo=3&autoStart=1&vol=8&tipo=13&nombre=RADIO+OYE+99.9+FM+EN+VIVO&botonPlay=3&imagen=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiX2Bl8rG4Dulpo3Ml5Ayk91jnB-1TCBYrO908NnkarS1uDGh-sly2YOybxHn8DwSw-PmPW8byJCuuzt1wSMY0i_B46M7ESw7yHQ8bwFlGCD1Uox6xiowqocHVI0hVO5feBNIr-yfxD9MoViEtK5Gb_9rLYq1q15ZvW6oF2IUIigMhpScapyzHpytc/w200-h120/LOGO%2099.9.png"></iframe></div>
+<!-- En players responsive puede modificar el weight a sus necesidades, Por favor no modifique el resto del codigo para poder seguir ofreciendo este servicio gratis  -->
+<!-- Fin. USAstreams.com html5 player -->
+
+
+ <!-- INICIO COMENTARIOS -->
+
+<form action="streaming.php" method="post" class="formulario-contacto">
+
+  <div class="input-contacto">
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" id="nombre" placeholder="Pedro Perez" required>
+  </div>
+  
+  <div class="input-contacto2">
+    <label for="telefono">Comentario</label>
+    <input type="text" name="comentario" id="comentario" placeholder="Escribe aqui tu comentario" required>
+  </div>
+
+  <div class="input-contacto">
+    <input type="submit" value="Enviar" class="btnazul">
+  </div>
+</form>
+
